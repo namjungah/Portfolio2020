@@ -34,7 +34,7 @@ html {
 /* -- body 스타일 -- */
 .index{
   overflow: hidden;
-  background-image: url("./src/background.jpg");
+  background-image: url("../src/background.jpg");
 }
 .about{
     background: #feda00;  
