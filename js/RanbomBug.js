@@ -33,9 +33,9 @@ function init() {
 	canvas.height = H;
 	ctx = canvas.getContext('2d');
   imgs['bug1'] = new Image;
-  imgs['bug1'].src = '/src/bug1.png';
+  imgs['bug1'].src = '../src/bug1.png';
   imgs['bug2'] = new Image;
-  imgs['bug2'].src = '/src/bug2.png';
+  imgs['bug2'].src = '../src/bug2.png';
 //   count_el = document.querySelector('#js-count');
   initGame();
 	canvas.addEventListener('click', onClicked);
