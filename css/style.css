@@ -1,0 +1,466 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+ol, ul , a{
+  text-decoration: none;
+}
+*{
+  list-style:none;
+}
+strong{
+  font-weight:bolder
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* -- body 스타일 -- */
+.index{
+  overflow: hidden;
+  background-image: url("/src/background.jpg");
+}
+.about{
+    background: #feda00;  
+  /* background-image: url("/src/webdesign_img_2.jpg"); */
+}
+
+.work{
+/* background-image: url("/src/webdesign_img_3.jpg"); */
+background-color: #ededed;
+}
+
+/* -- header -- */
+header{    position: fixed;
+  top: 0;
+  left: 0;
+  width: 91%;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.6s;
+  padding: 25px 0 0 90px;
+  z-index: 99999;
+}
+header .logo{  
+  padding: 0px 100px;
+}
+
+header .logo img{
+  height: 64px;
+}
+
+header ul{  
+  padding-right: 92px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+header ul li{
+  position: relative; 
+  list-style: none;
+}
+header ul li a{
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 2px;
+  margin: 0 15px;
+  display:inline-block; 
+}
+
+header ul li a:after {    
+  padding-top: 4px;
+  display:block;
+  content: '';
+  border-bottom: solid 3px black;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+header ul li a:hover:after { transform: scaleX(1); }
+
+
+.hide{
+  opacity: 0; transition: all .3s;
+}
+.show{
+  opacity: 1; transition: all .4s;
+}
+
+.honeyComb{
+  position: fixed;
+  right: 7%;
+  bottom: 4%;
+}
+
+/* -- 벌레 스크립트 스타일 -- */
+#c{
+  z-index: -99999;
+}
+
+/* -- 마우스 follow box -- */
+.box-index{
+  position: fixed;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  width: 42%;; 
+}
+.text-area-1{
+  text-align: center; 
+}
+.text-area-2{
+  text-align: center; 
+  font-size: 52px;
+}
+
+#name{  
+  font-size: 120px;  
+  font-weight: 800;
+}
+#name span{  
+  font-size: 21px;  
+  font-weight: 800;
+}
+.writting{
+  position: fixed;
+  right: 55%;
+  bottom: 135%;
+}
+
+/* -- 텍스트 롤링 -- */
+.rolling_box{
+  height: 60px;
+  text-align: center;
+}
+.rolling_box ul { 
+  width: 75%; 
+  height: 100%; 
+  margin:0 auto; 
+  overflow: hidden; 
+  position: relative;
+}
+.rolling_box ul li {
+  width: 100%; 
+  height: 100%; 
+  transition: .5s; 
+  position:absolute; 
+  transition: top .75s; 
+  top: 100%; 
+  z-index: 1; 
+  background-color: #feda00;
+  padding-top: 10px;
+}
+.card_sliding{ 
+  top: 0 !important; 
+  z-index: 100 !important;
+} 
+.card_sliding_after{ 
+  top: -100% !important; 
+  z-index: 10 !important;
+}
+.rolling_box ul li p {
+  font-size: 50px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.before_slide {
+  transform: translateY(100%);
+}
+.after_slide {
+  transform: translateY(0);
+}
+
+/* -- 이미지 3d -- */
+
+.section-container{
+  position: fixed;
+  top: 35%;
+  left: 7%;
+}
+
+.section-container .section-content{
+  position: relative;
+  /* pointer-events:none; */
+
+} 
+.section-container .section-content .figure{
+  position:relative;
+  width:100%;
+  top:50%;
+  -webkit-transform:translateY(-50%);
+  -moz-transform:translateY(-50%);
+  -o-transform:translateY(-50%);
+  -ms-transform:translateY(-50%);
+  transform:translateY(-50%);
+  perspective:1000px}
+
+.section-container .section-content .figure img{
+  display:inline-block;
+  position:relative;
+  width:100%;
+  vertical-align:top
+}
+
+/* -- about 페이지 --*/
+.introduce-1{
+  height: 650px;
+  margin: auto 25%;
+  padding-top: 15%;
+}
+.introduce-text{
+  line-height: 1.55;
+}
+.introduce-text p{
+  font-size: 50px;
+}
+.introduce-img{
+  top: 25%;
+  right: 22%;
+  position: absolute;
+}
+.introduce-img p{
+  text-align: right;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  bottom: 36%;
+  right: 3%;
+  line-height: 1.75;
+}
+.download{
+  padding: 50px 0 0 5px;
+  width: 140px;
+  height: 50px;
+}
+
+.download a{
+  display: block;
+  padding: 15px 30px;
+  color: black;
+  background: white;
+  border-radius: 30px;
+  border: 1px solid white;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: all .2s;
+}
+
+.download a:hover{
+  transition: all .2s;
+  transition-duration: 0.2s;
+  color: white;
+  background: none;
+  border: 1px solid white;
+}
+
+.introduce-2{
+  background-color: white;
+  height: 360px;
+  text-align: center;
+}
+
+.introduce-2 p{
+  font-size: 36px;
+  padding: 90px 0 25px 0;
+}
+.introduce-2 a{
+  text-decoration: none;
+}
+.introduce-2 .email{
+  font-size: 56px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  background-image: linear-gradient(transparent calc(100% - 3px), #000 3px);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s;
+  color: black;
+}
+
+@media (min-width: 1000px) {
+  .introduce-2 .email {
+    font-size: 4em;
+  }
+}
+.introduce-2 .email.yellow {
+  background-image: linear-gradient(transparent 60%, #F8CD07 40%);
+}
+.introduce-2 .email:hover {
+  background-size: 100% 100%;
+}
+
+.introduce-2 .copyright{
+  font-size: 13px !important;
+  position: absolute;
+  bottom: -37%;
+  right: 2%;
+  padding: 0;
+}
+
+/* cast&crew CSS*/
+#workList {
+  width: 1260px;
+  position: absolute;
+  left: 20%;
+  padding: 200px 0 50px;
+}
+#workList > ul {
+  margin-left: 120px;
+}
+#workList > ul > li{
+  margin-top : 40px;
+}
+#workList > ul > li:nth-child(1){
+  padding-top: 0px;
+}
+#workList > ul > li > div{
+  transition: all 0.05s ease-in-out; 
+  transition-duration: 0.3s;
+}
+#workList > ul > li> div > a > h2{
+  color: black;
+  cursor: pointer;
+  margin-top: 40px;
+  font-size: 60px;
+  font-weight: 500;
+  font-family: 'Poppins';
+  font-style: italic;
+  transition: 2s;
+  transition-duration: 0.3s;
+}
+#workList > ul > li> div > a > h2:hover{
+  color: #b2b2b2;
+  transform: translate(20px, 0);
+}
+
+#workList > ul > li> div > a > h2 > span{
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-size: 21px;
+  font-weight: bold;
+  margin-left: 50px;
+  color: #b2b2b2;
+}
+#workList > ul > li> div > a > h2:after{
+  content: ""; 
+  position: absolute; 
+  width: 0px; 
+  transition: all 0.05s ease-in-out; 
+  transition-duration: 0.5s; 
+  opacity: 0; 
+  border: 2px solid #b2b2b2;
+  left: 0;
+  margin-top: 88px;
+  z-index: -1;
+} 
+#workList > ul > li> div > a > h2:hover:after{
+  width: 80%; 
+  opacity: 1;
+}
+#workList > ul > li> div > img{
+  visibility:hidden; 
+  width: 32%; 
+  position: fixed; 
+  top: 10%; 
+  right: 20%;
+}
+
+#workList > div.pageTitle {
+  position: absolute; 
+  bottom: -120px; 
+  right: 12%; 
+  font-size: 6rem; 
+  color: #e69500; 
+  font-weight: 700;    
+  line-height: 110%;}
+
+/* CastCrew img */
+#workList > div.pic{
+  position: absolute; 
+  top: 10%; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  z-index: -99;}
+#workList > div.pic > .pic_list{
+  position: absolute;
+}
+#workList > div.pic > .pic_list:nth-child(1){
+  top: 0;
+  right: 5%;
+  width: 36%;
+}
+#workList > div.pic > .pic_list:nth-child(2){
+  top: 7%;
+  right: 10%;
+  width: 34%;
+}
+#workList > div.pic > .pic_list:nth-child(3){
+  top: 18%;
+  right: 8%;
+  width: 38%;
+}
+#workList > div.pic > .pic_list:nth-child(4){
+  top: 30%;
+  right: 3%;
+  width: 34%;
+}
+#workList > div.pic > .pic_list:nth-child(5){
+  top: 42%;
+  right: 14%;
+  width: 36%;
+}
+#workList > div.pic > .pic_list:nth-child(6){
+  top: 53%;
+  right: 5%;
+  width: 38%
+}
+#workList > div.pic > .pic_list:nth-child(7){
+  top: 62%;
+  right: 10%;
+  width: 34%;
+}
+#workList > div.pic > .pic_list > img
+{width: 100%;
+}
+
+/* -- 스크롤 바 css -- */
+/* ::-webkit-scrollbar { display:none; } */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #ff612f; 
+}
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}

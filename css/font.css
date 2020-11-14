@@ -1,0 +1,45 @@
+/* ----- Poppins ----- */
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Poppins Regular'), local('Poppins-Regular'), url('../font/Poppins-Regular.woff2') format('woff2');
+  }
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Poppins Medium'), local('Poppins-Medium'), url('../font/Poppins-Medium.woff2') format('woff2');
+  }
+  
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Poppins Bold'), local('Poppins-Bold'), url('../font/Poppins-Bold.woff2') format('woff2');
+  }
+
+
+/* ----- Noto Sans KR ----- */
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('NotoSansKR Regular'), local('NotoSansKR-Regular'), url('../font/NotoSansKR-Regular.woff2') format('woff2');
+  }
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('NotoSansKR Bold'), local('NotoSansKR-Bold'), url('../font/NotoSansKR-Bold.woff2') format('woff2');
+  }
+
