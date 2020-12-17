@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
 <title>남정아 포트폴리오</title>
-<link rel="stylesheet" href="./css/font.css" type="text/css"/>
-<link rel="stylesheet" href="./css/style.css" type="text/css"/>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/font.css">
 </head>
 
 <!-- nav -->
@@ -19,23 +19,9 @@
 </header>
 
 <body class="index">
-  <section id="index">
-    <div class="box-index">  
+  <canvas id="c"></canvas>
 
-      <div class="writting">
-        <img src="./src/writting.png" />
-      </div>
-      <!-- 텍스트 롤링 -->
-      <div class="text-area-1">
-        <div class="rolling_box">
-          <ul id ="rolling_box">
-            <li class="card_sliding" id ="first"><p></p></li>
-            <li class="" id ="second"><p></p></li>
-            <li class="" id ="third"><p></p></li>
-          </ul>
-        </div>
-      </div>
-      <div class="text-area-2"><strong>남정아</strong>입니다</div>
+  <div class="box-index">  
 
       <!-- 마우스 follow box -->
       <div class="section-container" style="z-index: -9999;">
@@ -43,14 +29,24 @@
             <div id="figure" class="figure"><img src="./src/box.png"/></div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="writting">
+        <img src="./src/writting.png" />
+      </div>
+      <!-- 텍스트 롤링 -->
+      <div class="text-container">
+        <div class="text-area-1">
+          <div class="rolling_box">
+            <ul id ="rolling_box">
+              <li class="card_sliding" id ="first"><p></p></li>
+              <li class="" id ="second"><p></p></li>
+              <li class="" id ="third"><p></p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-area-2"><strong>남정아</strong>입니다</div>
+      </div>
+  </div>
 
-  <!-- <div class="honeyComb">
-    <img src="./src/honeyComb.png"/>
-  </div> -->
-
-<canvas id="c"></canvas>
 
 <script src="./vendor/gsap/gsap.min.js" type="text/javascript" ></script>
 <script src="./vendor/jquery/jquery.min.js" type="text/javascript"></script>
